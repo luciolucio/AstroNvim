@@ -153,6 +153,8 @@ if is_available "gitsigns.nvim" then
   maps.n["<leader>g"] = sections.g
   maps.n["]g"] = { function() require("gitsigns").next_hunk() end, desc = "Next Git hunk" }
   maps.n["[g"] = { function() require("gitsigns").prev_hunk() end, desc = "Previous Git hunk" }
+  maps.n[">g"] = { function() require("gitsigns").next_hunk() end, desc = "Next Git hunk" }
+  maps.n["<g"] = { function() require("gitsigns").prev_hunk() end, desc = "Previous Git hunk" }
   maps.n["<leader>gl"] = { function() require("gitsigns").blame_line() end, desc = "View Git blame" }
   maps.n["<leader>gL"] = { function() require("gitsigns").blame_line { full = true } end, desc = "View full Git blame" }
   maps.n["<leader>gp"] = { function() require("gitsigns").preview_hunk() end, desc = "Preview Git hunk" }
